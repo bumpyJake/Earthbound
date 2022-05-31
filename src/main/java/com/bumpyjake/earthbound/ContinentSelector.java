@@ -1,8 +1,6 @@
 package com.bumpyjake.earthbound;
 
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Material;
+import org.bukkit.*;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -67,6 +65,8 @@ public class ContinentSelector implements CommandExecutor {
             continentGUI.setItem(24, africa);
 
             p.openInventory(continentGUI);
+            Location ploc = p.getLocation();
+            p.playSound(ploc, Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1.0f, 1.0f);
 
         }
 
