@@ -6,12 +6,8 @@ public final class Earthbound extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
 
-    }
+        getCommand("continentselector").setExecutor(new ContinentSelector());
 
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
     }
 }

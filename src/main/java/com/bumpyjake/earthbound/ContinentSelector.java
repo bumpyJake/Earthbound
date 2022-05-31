@@ -28,15 +28,45 @@ public class ContinentSelector implements CommandExecutor {
             ItemStack na = new ItemStack(Material.LIGHT_BLUE_BANNER, 1);
             ItemMeta nameta = na.getItemMeta();
             nameta.setDisplayName(ChatColor.AQUA + "North America");
-            nameta.addEnchant(Enchantment.DURABILITY, 1, true);
             na.setItemMeta(nameta);
 
             ItemStack europe = new ItemStack(Material.BLUE_BANNER, 1);
             ItemMeta europemeta = europe.getItemMeta();
-            europemeta.setDisplayName(ChatColor.AQUA + "North America");
-            europemeta.addEnchant(Enchantment.DURABILITY, 1, true);
-            europe.setItemMeta(nameta);
+            europemeta.setDisplayName(ChatColor.AQUA + "Europe");
+            europe.setItemMeta(europemeta);
 
+            ItemStack oce = new ItemStack(Material.CYAN_BANNER, 1);
+            ItemMeta ocemeta = oce.getItemMeta();
+            ocemeta.setDisplayName(ChatColor.AQUA + "Oceania");
+            oce.setItemMeta(ocemeta);
+
+            ItemStack ant = new ItemStack(Material.WHITE_BANNER, 1);
+            ItemMeta antmeta = ant.getItemMeta();
+            antmeta.setDisplayName(ChatColor.AQUA + "Antartica");
+            ant.setItemMeta(antmeta);
+
+            ItemStack asia = new ItemStack(Material.WHITE_BANNER, 1);
+            ItemMeta asiameta = asia.getItemMeta();
+            asiameta.setDisplayName(ChatColor.AQUA + "Antartica");
+            asia.setItemMeta(asiameta);
+
+            ItemStack sa = new ItemStack(Material.WHITE_BANNER, 1);
+            ItemMeta sameta = sa.getItemMeta();
+            sameta.setDisplayName(ChatColor.AQUA + "Antartica");
+            sa.setItemMeta(sameta);
+
+            ItemStack africa = new ItemStack(Material.WHITE_BANNER, 1);
+            ItemMeta africameta = africa.getItemMeta();
+            africameta.setDisplayName(ChatColor.AQUA + "Antartica");
+            africa.setItemMeta(africameta);
+
+            continentGUI.setItem(2, na);
+            continentGUI.setItem(6, europe);
+            continentGUI.setItem(9, oce);
+            continentGUI.setItem(13, ant);
+            continentGUI.setItem(17, asia);
+            continentGUI.setItem(20, sa);
+            continentGUI.setItem(24, africa);
 
             p.openInventory(continentGUI);
 
@@ -45,8 +75,6 @@ public class ContinentSelector implements CommandExecutor {
 
         return true;
     }
-
-
 }
 
 
