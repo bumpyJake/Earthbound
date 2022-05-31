@@ -21,41 +21,41 @@ public class ContinentSelector implements CommandExecutor {
 
             Player p = (Player) sender;
 
-            Inventory continentGUI = Bukkit.createInventory(p, 27, "\uE1CF " + ChatColor.AQUA + "Select your starting continent!");
+            Inventory continentGUI = Bukkit.createInventory(p, 27, ChatColor.WHITE + "\uE1CF " + ChatColor.BLUE + "Select your continent!");
 
             ItemStack na = new ItemStack(Material.LIGHT_BLUE_BANNER, 1);
             ItemMeta nameta = na.getItemMeta();
-            nameta.setDisplayName(ChatColor.AQUA + "North America");
+            nameta.setDisplayName(ChatColor.GREEN + "North America");
             na.setItemMeta(nameta);
 
             ItemStack europe = new ItemStack(Material.BLUE_BANNER, 1);
             ItemMeta europemeta = europe.getItemMeta();
-            europemeta.setDisplayName(ChatColor.AQUA + "Europe");
+            europemeta.setDisplayName(ChatColor.GREEN + "Europe");
             europe.setItemMeta(europemeta);
 
             ItemStack oce = new ItemStack(Material.CYAN_BANNER, 1);
             ItemMeta ocemeta = oce.getItemMeta();
-            ocemeta.setDisplayName(ChatColor.AQUA + "Oceania");
+            ocemeta.setDisplayName(ChatColor.GREEN + "Oceania");
             oce.setItemMeta(ocemeta);
 
             ItemStack ant = new ItemStack(Material.WHITE_BANNER, 1);
             ItemMeta antmeta = ant.getItemMeta();
-            antmeta.setDisplayName(ChatColor.AQUA + "Antartica");
+            antmeta.setDisplayName(ChatColor.GREEN + "Antartica");
             ant.setItemMeta(antmeta);
 
-            ItemStack asia = new ItemStack(Material.WHITE_BANNER, 1);
+            ItemStack asia = new ItemStack(Material.RED_BANNER, 1);
             ItemMeta asiameta = asia.getItemMeta();
-            asiameta.setDisplayName(ChatColor.AQUA + "Antartica");
+            asiameta.setDisplayName(ChatColor.GREEN + "Asia");
             asia.setItemMeta(asiameta);
 
-            ItemStack sa = new ItemStack(Material.WHITE_BANNER, 1);
+            ItemStack sa = new ItemStack(Material.YELLOW_BANNER, 1);
             ItemMeta sameta = sa.getItemMeta();
-            sameta.setDisplayName(ChatColor.AQUA + "Antartica");
+            sameta.setDisplayName(ChatColor.GREEN + "South America");
             sa.setItemMeta(sameta);
 
-            ItemStack africa = new ItemStack(Material.WHITE_BANNER, 1);
+            ItemStack africa = new ItemStack(Material.GREEN_BANNER, 1);
             ItemMeta africameta = africa.getItemMeta();
-            africameta.setDisplayName(ChatColor.AQUA + "Antartica");
+            africameta.setDisplayName(ChatColor.GREEN + "Africa");
             africa.setItemMeta(africameta);
 
             continentGUI.setItem(2, na);

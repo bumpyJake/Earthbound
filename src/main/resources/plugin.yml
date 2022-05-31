@@ -3,4 +3,7 @@ version: '${project.version}'
 main: com.bumpyjake.earthbound.Earthbound
 api-version: 1.18
 authors: [ bumpyJake ]
-description: EartboundSMP 
+description: EartboundSMP
+commands:
+  continentselector:
+    description: Select a continent
