@@ -7,3 +7,6 @@ description: EartboundSMP
 commands:
   continentselector:
     description: Select a continent
+  set:
+    usage: /command <area>
+    description: Set cont

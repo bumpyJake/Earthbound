@@ -68,6 +68,8 @@ public class ContinentSelector implements CommandExecutor {
             Location ploc = p.getLocation();
             p.playSound(ploc, Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1.0f, 1.0f);
 
+        }else{
+            System.out.println("This command can only be ran by a player.");
         }
 
 
