@@ -1,4 +1,56 @@
 NorthAmerica:
-  x: 69
-  y: 69
-  z: 69
+  ==: org.bukkit.Location
+  world: earthmap
+  x: -4887.235417883766
+  y: 68.0
+  z: -2166.465371821017
+  pitch: 4.2289314
+  yaw: -179.21655
+Europe:
+  ==: org.bukkit.Location
+  world: earthmap
+  x: 176.19746902762637
+  y: 65.0
+  z: -2494.6866448034757
+  pitch: 0.41802472
+  yaw: 90.79355
+Oceania:
+  ==: org.bukkit.Location
+  world: earthmap
+  x: 6802.2172359961305
+  y: 75.0
+  z: 1208.907668804184
+  pitch: 3.3323135
+  yaw: -179.58334
+Anartica:
+  ==: org.bukkit.Location
+  world: earthmap
+  x: 137.57649546828068
+  y: 102.0
+  z: 3924.8495319261715
+  pitch: 2.8936596
+  yaw: 179.78108
+Asia:
+  ==: org.bukkit.Location
+  world: earthmap
+  x: 3839.439742148503
+  y: 64.0
+  z: -2835.341477749835
+  pitch: 5.235134
+  yaw: -0.85362554
+SouthAmerica:
+  ==: org.bukkit.Location
+  world: earthmap
+  x: -3863.0480958047815
+  y: 65.0
+  z: 392.4798073377756
+  pitch: 3.772455
+  yaw: -90.01419
+Africa:
+  ==: org.bukkit.Location
+  world: earthmap
+  x: 812.5442579011884
+  y: 72.0
+  z: -1077.3668106122345
+  pitch: 0.5308796
+  yaw: 88.87131
