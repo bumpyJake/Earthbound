@@ -9,5 +9,7 @@ public final class Earthbound extends JavaPlugin {
 
         getCommand("continentselector").setExecutor(new ContinentSelector());
 
+        getServer().getPluginManager().registerEvents(new MenuHandler(), this);
+
     }
 }

@@ -19,7 +19,7 @@ public class ContinentSelector implements CommandExecutor {
 
             Player p = (Player) sender;
 
-            Inventory continentGUI = Bukkit.createInventory(p, 27, ChatColor.WHITE + "\uE1CF " + ChatColor.BLUE + "Select your continent!");
+            Inventory continentGUI = Bukkit.createInventory(p, 27, ChatColor.WHITE + "\uE15E " + ChatColor.BLUE + "Select your continent!");
 
             ItemStack na = new ItemStack(Material.LIGHT_BLUE_BANNER, 1);
             ItemMeta nameta = na.getItemMeta();
