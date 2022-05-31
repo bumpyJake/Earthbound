@@ -1,0 +1,6 @@
+name: Earthbound
+version: '${project.version}'
+main: com.bumpyjake.earthbound.Earthbound
+api-version: 1.18
+authors: [ bumpyJake ]
+description: EartboundSMP 
