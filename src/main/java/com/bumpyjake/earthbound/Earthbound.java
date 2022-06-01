@@ -6,18 +6,21 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Earthbound extends JavaPlugin implements Listener{
 
+
     @Override
     public void onEnable() {
+
 
         getConfig().options().copyDefaults();
         saveDefaultConfig();
 
         getCommand("continentselector").setExecutor(new ContinentSelector());
-        getCommand("live").setExecutor(new LiveCommand());
+        getCommand("live").setExecutor(new LiveCommand(this));
         getCommand("set").setExecutor(new SetContinentSpawns(this));
         this.getServer().getPluginManager().registerEvents(this, this);
 

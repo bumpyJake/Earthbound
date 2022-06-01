@@ -10,3 +10,5 @@ commands:
   set:
     usage: /command <area>
     description: Set cont
+  live:
+    description: Check if live

@@ -1,3 +1,9 @@
+on-message: ' &fYou are now  &7&oUse /live to go offline!'
+off-message: ' &fYou are no longer live!'
+on-message-all: ' &a%player% &fis now '
+on-title: 'You are now '
+on-subtitle: '&7Use /live to go offline!'
+
 NorthAmerica:
   ==: org.bukkit.Location
   world: earthmap
