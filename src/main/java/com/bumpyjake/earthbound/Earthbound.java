@@ -17,6 +17,7 @@ public final class Earthbound extends JavaPlugin implements Listener{
         saveDefaultConfig();
 
         getCommand("continentselector").setExecutor(new ContinentSelector());
+        getCommand("live").setExecutor(new LiveCommand());
         getCommand("set").setExecutor(new SetContinentSpawns(this));
         this.getServer().getPluginManager().registerEvents(this, this);
 
